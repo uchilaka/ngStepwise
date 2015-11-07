@@ -15,6 +15,14 @@ Here's what a stepwise progress bar looks like:
 
 ![Markdown Image](https://storage.googleapis.com/com-larcity-static/shadowbox/ng-stepwise-example.png "Here's what an implementation looks like!")
 
+## Features
+- Customizable color cues for completed (green) and pending (gray) tasks
+- Size hint for current step (larger than the others)
+- Tooltip for each of the step buttons to hint the user on what is expected
+- `url` configuration for each step to allow for redirection to complete 
+
+For examples of these features implemented, check out the source code @ the demo page by using the **View Source** option in your Browser (you may be able to get to this menu option this by right-clicking in the page): [http://larcity.com/repo/angularjs/stepwise/example/](http://larcity.com/repo/angularjs/stepwise/example/ "Here's an example of ng-stepwise at work")
+
 ## Installation
 
 Install via Bower: 
