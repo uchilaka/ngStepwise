@@ -17,9 +17,23 @@ Here's what a stepwise progress bar looks like:
 
 ## Installation
 
-You can install via Bower: 
+Install via Bower: 
 
 ````javascript
 bower install ng-stepwise
+````
+
+Your required components are:
+
+- ng-stepwise.css (stylesheet for directive)
+- ng-stepwise.js (directive code)
+
+include these in your project as follows:
+
+````html
+<!-- CSS Stylesheet to be included within HEAD tag -->
+<link rel="stylesheet" href="{project_root}/bower_components/ng-stepwise/ng-stepwise.css" />
+<!-- JS script to be included before the close of your BODY tag -->
+<script type="text/javascript" src="{project_root}/bower_components/ng-stepwise/ng-stepwise.js"></script>
 ````
 
