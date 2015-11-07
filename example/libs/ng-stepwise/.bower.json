@@ -23,11 +23,11 @@
     "bootstrap": "*"
   },
   "homepage": "https://github.com/uchilaka/ngStepwise",
-  "_release": "8d65c6dc10",
+  "_release": "e3b220253c",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "8d65c6dc10f23da6f82c9f177d474e3f1c04ec2d"
+    "commit": "e3b220253c19ad040713b1636a1715c5fa927bfb"
   },
   "_source": "git://github.com/uchilaka/ngStepwise.git",
   "_target": "*",
