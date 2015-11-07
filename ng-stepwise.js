@@ -34,7 +34,8 @@ angular.module('ngStepwise',[]).directive('ngStepwise', ['$sce', '$document','$t
         },
         restrict: 'AE',
         scope: {
-            steps: '=steps' /** Channel in the steps attribute of the element to map to the scope array of steps **/
+            globalOptions: '=ngDefaultOptions', /** Still working on these **/
+            steps: '=ngSteps' /** Channel in the steps attribute of the element to map to the scope array of steps **/
         },
         template: "\
             <div class='stepwise-frame'><ul class='stepwise'>\

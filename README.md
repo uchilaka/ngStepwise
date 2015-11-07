@@ -14,3 +14,8 @@ This tool is still super new. As I build on it, I'll be looking to add more func
 Here's what a stepwise progress bar looks like:
 
 ![Markdown Image](https://storage.googleapis.com/com-larcity-static/shadowbox/ng-stepwise-example.png "Here's what an implementation looks like!")
+
+## Installation
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//larcity.com/assets/img/favicon.ico" rel="shortcut icon" /> 
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Bootstrap 101 Template</title>
+        <!-- Bootstrap -->
+        <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <style type="text/css">
+            .centered {
+                float: none;
+                margin: 0 auto;
+            }
+            .jumbotron {
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body ng-app="ngStepwiseExample">
+        
+        <div class="row" ng-controller="ExampleCtrl">
+            <article class="col-xs-10 col-sm-8 col-lg-6 centered jumbotron">
+                <h1>An Example Using ngStepwise</h1>
+                <p>Some Lorem Ipsumy Stuff here</p>
+                
+                <!-- Basic Stepwise Example -->
+                <h2>Basic Usage</h2>
+                <ng-stepwise ng-default-options="stepwiseOptions"></ng-stepwise>
+                <ng-stepwise ng-steps="steps"></ng-stepwise>
+            </article>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Include Stepwise Directive -->
+        <script type="text/javascript" src="../ng-stepwise.js"></script>
+        <script type="text/javascript">
+            angular.module('ngStepwiseExample', [
+                // 'ngStepwise', /** You can include stepwise for your entire app **/
+                'ctrl.example'
+            ]);
+            // you could have this code included from an external file
+            angular.module('ctrl.example', [
+                'ngStepwise' /** Including stepwise JUST for this controller **/
+            ]).controller('ExampleCtrl', [
+                '$scope',
+                function($scope) {
+                    console.log("[module.controller.Example]");
+                    
+                    $scope.stepwiseOptions = {
+                        
+                    };
+                    
+                    $scope.steps = [
+                        {
+                            label: 'Step A',
+                            complete: true
+                        },
+                        {
+                            label: 'Step B',
+                            complete: true
+                        },
+                        {
+                            label: 'Step C',
+                        },
+                        {
+                            label: 'Step D',
+                        }
+                    ];
+                }
+            ]);
+        </script>
+    </body>
+</html>
