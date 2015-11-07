@@ -1,0 +1,8 @@
+{
+    "name": "ng-stepwise",
+    "dependencies": {
+        "angular": "~1.4.x",
+        "angular-sanitize": "~1.4.x",
+        "bootstrap": "*"
+    }
+}
