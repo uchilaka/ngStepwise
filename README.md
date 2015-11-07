@@ -1,6 +1,6 @@
 # This Is ngStepwise
 This plugin is the designed to:
-- Provide an easy to setup wizard progress bar i.e. the "Here's where you are in this process" and "here's how much more stuff you need to do" type views on websites 
+- Provide an easy to use wizard progress bar i.e. the "Here's where you are in this process" and "here's how much more stuff you need to do" type views on websites 
 - Requires AngularJS (it's an AngularJS directive)
 - Requires Bootstrap for the tooltip functionality 
 
