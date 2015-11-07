@@ -17,6 +17,9 @@
         <![endif]-->
         <script src="../bower_components/angular/angular.min.js"></script>
         <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <!-- @IMPORTANT - include the stepwise stylesheet -->
+        <link rel="stylesheet" href="../stepwise.css" />
+        <!-- Some custom styling for the example app -->
         <style type="text/css">
             .centered {
                 float: none;
@@ -38,6 +41,11 @@
                 <h2>Basic Usage</h2>
                 <ng-stepwise ng-default-options="stepwiseOptions"></ng-stepwise>
                 <ng-stepwise ng-steps="steps"></ng-stepwise>
+                
+                <h2>Getting Fancy</h2>
+                <ng-stepwise ng-default-options="stepwiseOptions"></ng-stepwise>
+                <ng-stepwise ng-steps="fancySteps"></ng-stepwise>
+                
             </article>
         </div>
 
@@ -66,20 +74,34 @@
                     
                     $scope.steps = [
                         {
-                            label: 'Step A',
+                            title: 'Step A',
                             complete: true
                         },
                         {
-                            label: 'Step B',
+                            title: 'Step B',
                             complete: true
                         },
                         {
-                            label: 'Step C',
+                            title: 'Step C',
+                            active: true
                         },
                         {
-                            label: 'Step D',
+                            title: 'Step D',
                         }
                     ];
+                    
+                    $scope.fancySteps = [];
+                    Array.prototype.push.apply($scope.fancySteps, $scope.steps);
+                    Array.prototype.push.apply($scope.fancySteps, [
+                        {
+                            title: 'Step E',
+                        },
+                        {
+                            title: 'Step Final',
+                            incompleteBgColor: 'purple',
+                            incompleteBorderColor: 'pink'
+                        }
+                    ]);
                 }
             ]);
         </script>

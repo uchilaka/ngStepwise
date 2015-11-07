@@ -24,7 +24,7 @@
     margin: 0 0 0 5px;
 }
 .stepwise>li>label {
-    text-align: left;
+    text-align: center;
     font-weight: 100;
 }
 .stepwise>li>a {
@@ -48,7 +48,6 @@
 }
 .stepwise>li>label {
     position: relative;
-    left: -20px;
 }
 .stepwise>li:last-child>label {
     left: 0;
