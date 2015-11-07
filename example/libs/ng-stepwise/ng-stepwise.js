@@ -25,6 +25,11 @@ angular.module('ngStepwise',[]).directive('ngStepwise', ['$sce', '$document','$t
                     };
                 }
             };
+            element.on('mouseover', function() {
+                if(attrs.url) {
+                    // do something if there is a url for the task
+                }
+            });
             // apply tooltips
             $timeout(function() {
                 $("[title]").tooltip({
@@ -41,7 +46,7 @@ angular.module('ngStepwise',[]).directive('ngStepwise', ['$sce', '$document','$t
             <div class='stepwise-frame'><ul class='stepwise'>\
                 <li ng-repeat='step in steps' ng-attr-class='{{getItemClass(step, $index)}}'>\
                     <label>{{step.title}}</label>\
-                    <a href='#' ng-attr-title='{{step.tooltip}}' ng-style='getItemCss(step, $index)'>&nbsp;</a>\
+                    <a ng-href='{{step.url}}' target='{{step.newWindow?'_blank':'_self'}}' ng-attr-title='{{step.tooltip}}' ng-style='getItemCss(step, $index)'>&nbsp;</a>\
                     <hr class='divider' />\
                 </li>\
             </ul></div>\

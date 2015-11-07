@@ -37,3 +37,6 @@ include these in your project as follows:
 <script type="text/javascript" src="{project_root}/bower_components/ng-stepwise/ng-stepwise.js"></script>
 ````
 
+## Demo
+
+You can view a demo of working code here: [http://larcity.com/repo/angularjs/stepwise/example/](http://larcity.com/repo/angularjs/stepwise/example/ "Here's an example of ng-stepwise at work")
