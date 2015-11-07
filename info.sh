@@ -1,0 +1,1 @@
+bower info ng-stepwise
