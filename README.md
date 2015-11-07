@@ -17,5 +17,9 @@ Here's what a stepwise progress bar looks like:
 
 ## Installation
 
+You can install via Bower: 
 
+````javascript
+bower install ng-stepwise
+````
 
