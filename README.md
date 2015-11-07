@@ -39,6 +39,4 @@ include these in your project as follows:
 
 ## Demo
 
-You can view a demo of working code here:
-
-[http://larcity.com/repo/angularjs/stepwise/example/](http://larcity.com/repo/angularjs/stepwise/example/ "Here's an example of ng-stepwise at work")
+You can view a demo of working code here: [http://larcity.com/repo/angularjs/stepwise/example/](http://larcity.com/repo/angularjs/stepwise/example/ "Here's an example of ng-stepwise at work")
