@@ -1,0 +1,9 @@
+{
+    "name": "com-uchilaka-stepwise-example",
+    "dependencies": {
+        "angular": "~1.4.x",
+        "angular-sanitize": "~1.4.x",
+        "bootstrap": "*",
+        "ng-stepwise": "*"
+    }
+}
