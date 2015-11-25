@@ -46,7 +46,10 @@ angular.module('ngStepwise',[]).directive('ngStepwise', ['$sce', '$document','$t
             <div class='stepwise-frame'><ul class='stepwise'>\
                 <li ng-repeat='step in steps' ng-attr-class='{{getItemClass(step, $index)}}'>\
                     <label>{{step.title}}</label>\
-                    <a ng-href='{{step.url}}' target=\"{{step.newWindow ? '_blank': (step.windowTarget ? step.windowTarget : '_self')}}\" ng-attr-title='{{step.tooltip}}' ng-style='getItemCss(step, $index)'>&nbsp;</a>\
+                    <!-- Allow return to completed steps -->\
+                    <a ng-show='step.complete' ng-href='{{step.url}}' target=\"{{step.newWindow ? '_blank': (step.windowTarget ? step.windowTarget : '_self')}}\" ng-attr-title='{{step.tooltip}}' ng-style='getItemCss(step, $index)'>&nbsp;</a>\
+                    <!-- Otherwise, disable link if step is not complete -->\
+                    <a ng-show='!step.complete' href='#' ng-attr-title='{{step.tooltip}}' ng-style='getItemCss(step, $index)'>&nbsp;</a>\
                     <hr class='divider' />\
                 </li>\
             </ul></div>\
